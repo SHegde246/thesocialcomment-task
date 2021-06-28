@@ -1,1 +1,177 @@
-/* You can add global styles to this file, and also import other style files */
+//defining themes (app uses dark theme)
+@import "../node_modules/@angular/material/theming";
+@include mat-core();
+
+$my-primary: mat-palette($mat-gray, 400);
+$my-accent: mat-palette($mat-light-blue, 400);
+
+$my-theme: mat-dark-theme($my-primary, $my-accent);
+
+@include angular-material-theme($my-theme);
+
+////////////////////////////////////////////////////////
+
+//gets rid of the scrollbar inside the sidenav
+.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+} 
+
+
+
+.mat-progress-bar {
+    height:10px;
+}
+
+md-progress-linear .md-container {
+    height: 50px;
+}
+
+md-progress-linear .md-container .md-bar {
+    height: 50px;
+}
+
+#sidenav{
+  background-color: rgb(0, 0, 0);
+}
+
+
+//gives colors to the progress bars
+#applications .mat-progress-bar-fill::after {
+    background-color: #467d91;
+
+}
+#shortlisted .mat-progress-bar-fill::after {
+    background-color: rgb(62, 170, 236);
+
+}
+#rejected .mat-progress-bar-fill::after {
+    background-color: rgb(226, 60, 54);
+
+}
+#on-hold .mat-progress-bar-fill::after {
+    background-color: #af77a5;
+
+}
+#placed .mat-progress-bar-fill::after {
+    background-color: rgb(140, 62, 236);
+
+}
+
+
+//gives color to the badge on notification icon on toolbar
+.mat-badge-content {
+    background: rgb(62, 170, 236);
+    color: white;
+}
+
+
+
+//change the size and color of the placeholder text in the search bar
+//Standard
+.mat-form-field {
+    .mat-input-element {
+      color: slategray;
+      font-size: 20px;
+    }
+    .mat-form-field-label {
+      color: slategray;
+      font-size: 20px;
+    }
+    .mat-form-field-underline {
+      background-color: slategray;
+      font-size: 20px;
+    }
+    .mat-form-field-ripple {
+      background-color: slategray;
+      font-size: 20px;
+    }
+  }
+
+  //Focus
+  .mat-form-field.mat-focused {
+    .mat-form-field-label {
+      color: #ffffff;
+      font-size: 20px;
+    }
+    .mat-form-field-ripple {
+      background-color: #ffffff;
+      font-size: 20px;
+    }
+    .mat-input-element {
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+
+
+//change color of snackbar in area chart component
+.sb {
+  background-color: rgb(99, 96, 96);
+  color:rgb(255, 255, 255)
+}
+
+
+/////////////////////////////////////
+
+//adding effects to the components
+
+.container-a:hover{
+  margin-top:5px;
+  //padding-bottom:10px;
+  background-color: rgb(140, 62, 236);
+}
+
+
+#bottomleft-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(140, 62, 236);
+  z-index: 900;
+}
+
+#image-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(140, 62, 236);
+  z-index: 900;
+}
+
+#area-chart-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(62, 170, 236);
+  z-index: 900;
+}
+
+#doughnut-chart-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(62, 170, 236);
+  z-index: 900;
+}
+
+#progress-bar-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(226, 60, 54);
+  z-index: 900;
+}
+
+#topleft-left-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(226, 60, 54);
+  z-index: 900;
+}
+
+#topleft-mid-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(140, 62, 236);
+  z-index: 900;
+}
+
+#topleft-right-card:hover{
+  margin-top:10px;
+  border: 1px solid rgb(62, 170, 236);
+  z-index: 900;
+}
+
+.applicant-list-card:hover{
+  margin-left:10px;
+  border: 2px solid rgb(226, 60, 54);
+  z-index: 900;
+}

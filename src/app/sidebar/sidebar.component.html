@@ -1,0 +1,128 @@
+<app-header style="position: sticky; top:0; z-index: 998;"></app-header>
+
+  
+  <mat-sidenav-container
+    id="sidenavContainer"
+    fullscreen
+
+    style="position:absolute; top:110px; ">
+
+
+    <mat-sidenav
+      mode="side"
+      #sidenav
+      id="sidenav"
+      opened>
+      
+      <mat-list id="menus">
+        
+         <mat-list-item>
+            <button 
+            class="menu-item"
+                mat-flat-button>
+                <mat-icon>home</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>assessment</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>photo_camera</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>folder</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>event_available</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>group</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>chat</mat-icon>
+            </button>
+          </mat-list-item>
+
+
+          <mat-list-item>
+            <button 
+            class="menu-item"
+              mat-flat-button>
+              <mat-icon>logout</mat-icon>
+            </button>
+          </mat-list-item>
+
+          <br><br><br><br><br><br><br><br>
+       
+          <mat-list-item>
+              <button 
+              class="menu-item"
+                mat-flat-button
+              id="settings-button">
+                <mat-icon>settings_application</mat-icon>
+              </button>
+            </mat-list-item>
+        
+  
+      </mat-list>
+    </mat-sidenav>
+
+
+    <mat-sidenav-content>
+
+      <!--uses nested components concept-->
+      <app-topleft-left style="position:absolute; left:10px; top:15px"></app-topleft-left>
+      <app-topleft-mid style="position:absolute; left:330px; top:15px"></app-topleft-mid>
+      <app-topleft-right style="position:absolute; left:650px; top:15px"></app-topleft-right>
+
+      <app-area-chart style="position:absolute; left:10px; top:155px"></app-area-chart>
+
+      <app-bottomleft style="position:absolute; left:10px; top:385px"></app-bottomleft>
+
+      <app-progress-bar style="position:absolute; left:550px; top:155px"></app-progress-bar>
+
+      <app-doughnut-chart style="position:absolute; left:550px; top:365px"></app-doughnut-chart>
+
+      <app-image style="position:absolute; left:980px; top:15px"></app-image>
+
+      <app-applicant-list style="position:absolute; left:960px; top:270px"></app-applicant-list>
+
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>

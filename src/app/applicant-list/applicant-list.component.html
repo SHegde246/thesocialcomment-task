@@ -1,0 +1,26 @@
+<!--uses structural directive ngFor to iterate through the applicants array (defined in .ts file) and disply the name and position-->
+<mat-list id="applicants">
+    <div>
+    
+        <mat-list-item *ngFor = "let applicant of applicants">
+            
+            <mat-card class="applicant-list-card" style="display:flex; justify-content: space-between; flex-wrap: wrap; height:50px; width:440px; background-color:rgb(0, 0, 0);">
+                    
+                    <div style="align-self: left; padding-right: 15px"><mat-icon>account_circle</mat-icon></div>
+                    <div style="flex: 1; align-self: left; padding-bottom:0px"><h3> {{applicant.name}} </h3></div>
+                    <mat-icon style="font-size:10px; position:relative; top:5px; align-self: right">sms</mat-icon>
+                    <mat-icon style="font-size:10px; position:relative; top:5px; align-self: right; padding-left:10px">call</mat-icon>
+                
+    
+                    <div class="break"></div>
+                    
+                        <h6 style="padding-left:40px; padding-top:0px">Applied for <span style="color: rgb(62, 170, 236);"> {{applicant.pos}} </span></h6>
+                
+            </mat-card>
+        
+            <br><br>
+        </mat-list-item>
+    
+        
+    </div>
+</mat-list>

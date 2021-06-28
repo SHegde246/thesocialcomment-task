@@ -1,0 +1,47 @@
+<mat-card id="topleft-right-card" style="height:100px; width:283px; background-color:rgb(0, 0, 0);">
+
+    <div style="display: flex; justify-content: space-between;">
+    <p style="font-size: 10px;">Total Applications </p>
+    <button mat-flat-button style="width:2px; height:20px;" [matMenuTriggerFor]="menu">
+        <mat-icon style="font-size:12px">more_horiz</mat-icon>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>View Details</button>
+            <button mat-menu-item>Download Stats</button>
+        </mat-menu>
+    
+    </button>
+    </div>
+    
+    
+    
+    <div style="display: flex; justify-content: space-between;">
+    
+    <div class="container">
+    <p style="font-size: 18px;">1501</p>
+    <mat-icon style="font-size:13px; color:rgb(226, 60, 54)">south_east</mat-icon>
+    <span style="display: inline; font-size:10px; color:rgb(226, 60, 54)">-0.4%</span>
+    </div>
+    
+    
+    <div align="right" style="margin-top:0.5%;">
+        <circle-progress
+            [percent]="40"  
+            [space]="-10" 
+            [radius]="30" 
+            [outerStrokeWidth]="10"
+            [outerStrokeColor]="'rgb(226, 60, 54)'"
+            
+            [animation]="true"
+            [animationDuration]="1000"
+            [maxPercent]="100"
+
+            [title]="'+40%'"
+            [titleColor]="'rgb(226, 60, 54)'"
+            >
+        </circle-progress>
+    </div>
+    
+    
+    </div>
+    
+    </mat-card>

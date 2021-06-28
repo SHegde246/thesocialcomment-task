@@ -1,0 +1,49 @@
+<mat-card id="area-chart-card" style="width:500px; height:190px; background-color:rgb(0, 0, 0);">
+
+    <div style="display:flex; justify-content: space-between;">
+    <h5>Applications Received</h5>
+
+            <button style="height:30px"
+            class="menu-item"
+                mat-flat-button>
+                <h6><u>This Year</u></h6>
+            </button>
+
+            <button style="height:30px"
+            class="menu-item"
+                mat-flat-button>
+                <h6><u>This Week</u></h6>
+            </button>
+
+            <button style="height:30px"
+            class="menu-item"
+                mat-flat-button>
+                <h6><u>Today</u></h6>
+            </button>
+
+
+
+            <button style="height:30px"
+            class="menu-item"
+                mat-flat-button
+                (click)="openSnackBar('Report is being downloaded', 'Dismiss')">
+
+                <mat-icon style="font-size:15px; ">create_new_folder</mat-icon>
+                <span style="display:inline-block"><h6><u>Download Report</u></h6></span>
+            </button>
+    </div>
+
+    <div>
+        <canvas id="myCanvas"
+            baseChart
+            [chartType]="'line'"
+            [datasets]="areaChartData"
+            [labels]="areaChartLabels"
+            [options]="areaChartOptions"
+            [legend]="false"
+            [colors]="areaChartColor"
+            >
+        </canvas>
+    </div>
+      
+    </mat-card>

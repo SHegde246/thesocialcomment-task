@@ -1,0 +1,69 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#sidenavContainer {
+    margin-top: 0px;
+    position:absolute;
+}
+
+#sidenav {
+    width: 60px;
+    //use 60
+}
+
+/*
+#sidenav.menu-close {
+    width: 70px
+}
+
+#sidenav.menu-open {
+    width: 240px
+}
+*/
+
+
+#sidenav .mat-list-item-content {
+    padding: 0;
+}
+
+//button behind the icons
+#sidenav .menu-item {
+    width: 5%;
+    border-radius: 0;
+    text-align: left;
+    padding: 0px;
+    background-color: black;
+}
+
+#sidenav .menu-item:hover {
+  background: rgb(62, 170, 236);
+}
+#sidenav .menu-item mat-icon {
+    font-size:20px;  //size of icon
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+
+
+
+/*
+#settings-button{
+    position: relative;
+    bottom: 5px;
+}
+*/
+
+/*
+#settings-button {width: 100%;
+    border-radius: 0;
+    text-align: left;
+    padding: 0px;}
+.bottomStick{position:absolute; bottom:0}
+.bottomRelative{position:relative;}
+*/
